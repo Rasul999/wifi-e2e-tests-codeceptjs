@@ -1,0 +1,17 @@
+{
+  "name": "e2e-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "env-cmd -f .env codeceptjs run --steps",
+    "test:dev": "env-cmd -f .env.development codeceptjs run --steps",
+    "test:ui": "env-cmd -f .env.development codecept-ui --app"
+  },
+  "dependencies": {
+    "@codeceptjs/ui": "0.4.6",
+    "codeceptjs": "3.1.1",
+    "env-cmd": "10.1.0",
+    "faker": "5.5.3",
+    "playwright": "1.14.0"
+  }
+}
