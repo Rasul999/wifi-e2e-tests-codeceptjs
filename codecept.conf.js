@@ -18,6 +18,7 @@ exports.config = {
   include: {
     I: './steps_file.js',
     loginPage: './pages/login.js',
+    mainPage: './pages/main.js',
   },
   name: 'wifi-frontend',
   plugins: {

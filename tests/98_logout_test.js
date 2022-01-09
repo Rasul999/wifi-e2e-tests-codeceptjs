@@ -1,8 +1,8 @@
 Feature('98. Выход из ЛК')
 
-Scenario('Выход из личного кабинета', ({ I, loginPage }) => {
+Scenario('Выход из личного кабинета', ({ I, mainPage }) => {
   I.amOnPage('/')
-  I.click(loginPage.locators.sidebarUserDropdownTab)
-  I.click(loginPage.locators.sidebarLogoutBtn)
-  I.dontSeeElement(loginPage.locators.authenticatedLayout)
+  I.click(mainPage.locators.sidebarUserDropdownTab)
+  I.click(mainPage.locators.sidebarLogoutBtn)
+  I.dontSeeElement(mainPage.locators.authenticatedLayout)
 })
