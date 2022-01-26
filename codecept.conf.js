@@ -1,6 +1,6 @@
 exports.config = {
   tests: 'tests/*_test.js',
-  output: './output',
+  output: '/tmp/output',
   helpers: {
     Playwright: {
       browser: process.env.BROWSER,
@@ -11,12 +11,13 @@ exports.config = {
       ignoreHTTPSErrors: true,
       keepBrowserState: true,
       keepCookies: true,
-      waitForNavigation: 'networkidle',
-      
+      waitForNavigation: 'networkidle',      
     }
   },
   include: {
     I: './steps_file.js',
+    advertisingPlatformsPage: './pages/advertisingPlatforms.js',
+    audienceCreatePage: './pages/audienceCreate.js',    
     loginPage: './pages/login.js',
     mainPage: './pages/main.js',
   },
